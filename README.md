@@ -7,3 +7,6 @@
 - yarn でpackegeをインストール（ npm i と同じ意味のコマンド）
 - yarn watchでSCSSファイルの修正を常時監視（SCSSを修正したら即時CSSにコンパイルしてくれる）
 - yarn cssでCSSにコンパイル（コマンド走ったときだけCSSをコンパイル）
+
+# このプラグインが設定されているサイト（デモ）
+https://ore-gori.ah-kutsu.net/
