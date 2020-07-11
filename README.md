@@ -10,3 +10,6 @@
 
 # このプラグインが設定されているサイト（デモ）
 https://ore-gori.ah-kutsu.net/
+
+# 素材、なんとなくデザイン
+https://www.figma.com/file/qkRf2jadTrFG0BHv0anVho/%E3%81%8A%E3%82%8C%E3%81%AE%E3%82%B4%E3%83%AA%E3%83%A9?node-id=0%3A1
