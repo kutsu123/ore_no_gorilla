@@ -1,0 +1,82 @@
+// ==========================================================================
+// Snow Monkey テーマのヘッダの上書き
+// ==========================================================================
+//ヘッダ全体
+.l-header{
+	background-color: #B21326;
+	box-shadow: none;
+	color: #fff;
+	.c-container{
+		// &::before{
+		// 	content: "";
+		// 	display: flex;
+		// 	float: left;
+		// 	width: 3.25rem;
+		// 	height: 3.25rem;
+		// 	background: url(../images/icon-gorilla.png) no-repeat center bottom;
+		// 	background-size: contain;
+		// 	@include mq(sm, min) {
+		// 		height: 3.75rem;
+		// 		width: 3.75rem;
+		// 	}
+		// 	@include mq(md, min) {
+		// 		height: 5rem;
+		// 		width: 5rem;
+		// 	}
+		// 	@include mq(lg, min) {
+		// 		height: 5.7rem;
+		// 		width: 5.7rem;
+		// 	}
+		// 	@include mq(sm, max, true) {
+		// 		margin-left: 0.75em;
+		// 	}
+		// }
+	}
+}
+
+//ロゴ
+
+
+.c-site-branding{
+	&::before{
+	content: "";
+	display: flex;
+	float: left;
+	width: 3.25rem;
+	height: 3.25rem;
+	margin-bottom: -0.9rem;
+	margin-right: 0.5rem;
+	margin-left: 0.75em;
+	background: url(../images/icon-gorilla.png) no-repeat center bottom;
+	background-size: contain;
+	@include mq(sm, min) {
+		height: 3.75rem;
+		width: 3.75rem;
+	}
+	@include mq(md, min) {
+		height: 5rem;
+		width: 5rem;
+		margin-right: 1rem;
+	}
+	@include mq(lg, min) {
+		height: 5.7rem;
+		width: 5.7rem;
+	}
+	@include mq(xl, min) {
+		margin-top: -0.8rem;
+	}
+}
+}
+
+.c-site-branding__title{
+	// font-size: calc(1.5rem + ((1vw - 0.4rem) * 1.25));
+	@include mq(md, min) {
+		font-size: 2rem;
+	}
+
+}
+.c-site-branding__description{
+	@include mq(sm, max, true) {
+		font-size: 0.4rem;
+	}
+}

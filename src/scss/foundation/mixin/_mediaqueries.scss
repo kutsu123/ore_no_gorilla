@@ -1,0 +1,30 @@
+//== Media Queries
+// https://www.nxworld.net/tips/sass-media-queries-mixin.html
+//
+// .elements {
+//   /* @media screen and (min-width: 1024px) */
+//   @include mq(lg) {
+//   }
+// 
+//   /* @media screen and (max-width: 639px)  ※第3引数にtrueをつけると-1した数でmax値をだす */
+//   @include mq(sm, max, true) {
+//   }
+// 
+//   /* @media screen and (min-width: 768px) and (max-width: 1023px) */
+//   @include mq {
+//     @include mq(lg, max, true) {
+//     }
+//   }
+// }
+
+// --------------------------------------------------
+
+@mixin mq($breakpoint: md, $rule: min, $subtraction: false) {
+  $breakpoint: map_get($mq-breakpoints, $breakpoint);
+  @if $rule == max and $subtraction {
+    $breakpoint: $breakpoint - 1;
+  }
+  @media screen and (#{$rule}-width: $breakpoint) {
+    @content;
+  }
+}

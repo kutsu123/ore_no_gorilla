@@ -1,0 +1,28 @@
+//バー
+.c-hamburger-btn__bars{
+	@include mq(md, min) {
+		width: 2rem;
+		height: 1.2rem;
+	}
+}
+.c-hamburger-btn__bar{
+	background-color: #fff;
+	@include mq(md, min) {
+		&:nth-child(2){
+			top: calc(0.6rem);
+		}
+		&:nth-child(3){
+			top: 1.2rem;
+		}
+	}
+}
+
+//ラベル
+.c-hamburger-btn__label{
+	color: #fff;
+	margin-top: 0.5rem;
+	@include mq(md, min) {
+		margin-top: 0.6rem;
+		font-size: 0.86rem;
+	}
+}

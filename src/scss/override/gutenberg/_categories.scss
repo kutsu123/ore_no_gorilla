@@ -1,0 +1,27 @@
+// ==========================================================================
+// コア - カテゴリブロックの新規ブロックスタイル
+// ==========================================================================
+.wp-block-categories{
+	//シンプルな横並び
+	&.is-style-side-by-side1{
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: -0.25em;
+		padding-bottom: 1.5em;
+		>li{
+			padding: 0.25em;
+			&:not(:first-child){
+				margin-top: 0;
+			}
+			&:not(:last-child)::after{
+				content: "/";
+				margin-right: 0.5em;
+				margin-left: 0.5em;
+			}
+			&.cat-item-8{
+				display:none;
+			}
+		}
+	}
+}

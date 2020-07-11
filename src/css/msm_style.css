@@ -1,0 +1,95 @@
+.l-container {
+  background-color: #B21326; }
+
+.l-header {
+  background-color: #B21326;
+  box-shadow: none;
+  color: #fff; }
+
+.c-site-branding::before {
+  content: "";
+  display: flex;
+  float: left;
+  width: 3.25rem;
+  height: 3.25rem;
+  margin-bottom: -0.9rem;
+  margin-right: 0.5rem;
+  margin-left: 0.75em;
+  background: url(../images/icon-gorilla.png) no-repeat center bottom;
+  background-size: contain; }
+  @media screen and (min-width: 640px) {
+    .c-site-branding::before {
+      height: 3.75rem;
+      width: 3.75rem; } }
+  @media screen and (min-width: 768px) {
+    .c-site-branding::before {
+      height: 5rem;
+      width: 5rem;
+      margin-right: 1rem; } }
+  @media screen and (min-width: 1024px) {
+    .c-site-branding::before {
+      height: 5.7rem;
+      width: 5.7rem; } }
+  @media screen and (min-width: 1280px) {
+    .c-site-branding::before {
+      margin-top: -0.8rem; } }
+
+@media screen and (min-width: 768px) {
+  .c-site-branding__title {
+    font-size: 2rem; } }
+
+@media screen and (max-width: 639px) {
+  .c-site-branding__description {
+    font-size: 0.4rem; } }
+
+@media screen and (min-width: 768px) {
+  .c-hamburger-btn__bars {
+    width: 2rem;
+    height: 1.2rem; } }
+
+.c-hamburger-btn__bar {
+  background-color: #fff; }
+  @media screen and (min-width: 768px) {
+    .c-hamburger-btn__bar:nth-child(2) {
+      top: calc(0.6rem); }
+    .c-hamburger-btn__bar:nth-child(3) {
+      top: 1.2rem; } }
+
+.c-hamburger-btn__label {
+  color: #fff;
+  margin-top: 0.5rem; }
+  @media screen and (min-width: 768px) {
+    .c-hamburger-btn__label {
+      margin-top: 0.6rem;
+      font-size: 0.86rem; } }
+
+.l-contents > .c-container {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 0.5rem; }
+  @media screen and (min-width: 768px) {
+    .l-contents > .c-container {
+      border-radius: 1rem; } }
+  @media screen and (max-width: 1279px) {
+    .l-contents > .c-container {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+.l-contents__inner {
+  max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.l-footer-widget-area {
+  border-top: none;
+  color: #fff; }
+  .l-footer-widget-area .c-widget__title::before, .l-footer-widget-area .c-widget__title::after {
+    background-color: #fff; }
+
+.c-copyright {
+  background-color: transparent;
+  color: #fff;
+  text-align: center; }
+
+.c-meta__item--author {
+  display: none; }

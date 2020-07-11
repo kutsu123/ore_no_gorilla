@@ -1,0 +1,28 @@
+// Breakpoint（Snow Monkeyのブレイクポイントを基準にしています）
+$mq-breakpoints: (
+	sm: 640px, //40em
+	md: 768px,//48em
+	lg: 1024px, //64em
+	xl: 1280px, //80em
+) !default;
+
+//rootの文字サイズ（px）
+$default-font-size: 16;
+
+//フォントファミリー
+$ff-gothic : 'YuGothic', YuGothic, Meiryo, sans-serif;
+$ff-mincho : "Yu Mincho", "YuMincho", '游明朝', serif;
+
+//ファイルまでのパス
+$url-img: '../images/';
+$url-fonth: '../fonts/';
+
+// Color
+$colors-map: (
+	base-text: #111,
+	base-link: #7c94a4,
+	accent-color1: #1d2a38,
+	accent-color2: #fe9905,
+	dark-gray: #C6C6C6,
+	light-gray: #F0F0F0
+) !default;

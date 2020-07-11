@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+// ==========================================================================
+// Foundation
+// ==========================================================================
+//variable
+@import 'foundation/variable';
+
+// Mixins
+@import 'foundation/mixin/fontsize';
+@import 'foundation/mixin/mediaqueries';
+
+
+// ==========================================================================
+// override
+// ==========================================================================
+
+// Snow Monkey Theme
+// ------------------------------------
+//layout
+@import 'override/snow-monkey/l-container'; //全体のコンテナ
+@import 'override/snow-monkey/l-header'; //ヘッダ
+
+//component
+@import 'override/snow-monkey/c-hamburger-btn'; //ハンバーガーボタン
+
+
+// Gutenberg（Core Block）
+// ------------------------------------
+// @import 'override/gutenberg/categories'; //カテゴリブロック
+
+
+// ==========================================================================
+// Custom Component
+// ==========================================================================
+// .p-entry__categories{
+// 	margin-top: 3.5em;
+// }
+
+
+
+
+.l-contents > .c-container{
+	padding: 2rem;
+	background-color: #fff;
+	border-radius: 0.5rem;
+	@include mq(md, min) {
+		border-radius: 1rem;
+	}
+	@include mq(xl, max, true) {
+		margin-right: 1rem;
+		margin-left: 1rem;
+	}
+}
+
+.l-contents__inner{
+	max-width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.l-footer-widget-area{
+	border-top: none;
+	color: #fff;
+	.c-widget__title{
+		&::before,
+		&::after{
+			background-color: #fff;
+		}
+	}
+}
+
+.c-copyright{
+	background-color: transparent;
+	color: #fff;
+	text-align: center;
+}
+
+.c-meta__item--author{
+	display: none;
+}
